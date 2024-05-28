@@ -1,0 +1,16 @@
+env: "local" # local, dev, prod
+database: "postgres"
+http_server:
+  address: "localhost:8082"
+  timeout: 4s
+  idle_timeout: 60s
+postgres:
+  host: "localhost"
+  port: "5432"
+  user: "postgres"
+  password: "password"
+  database_name: "serverdatabase"
+#sqlite:
+#  storage_path: "./storage/storage.db"
+auth:
+  jwt_secret: "secret"
